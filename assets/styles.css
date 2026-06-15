@@ -1,3 +1,4 @@
+@import url('https://googleapis.com');
 :root {
   --burnt-sienna: #BE5103;
   --primary-blue: #0E3386;
@@ -10,7 +11,6 @@
   --line: rgba(24, 69, 59, 0.12);
   --shadow: 0 10px 30px rgba(24, 69, 59, 0.10);
 }
-@import url('https://googleapis.com');
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
