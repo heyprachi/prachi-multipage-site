@@ -13,9 +13,17 @@
         <span class="brand-mark"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10.75V20h5.5v-5.5h3V20H19V10.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <div class="nav-links">
-        <a class="nav-link " href="../research" aria-label="Research">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5" stroke="currentColor" stroke-width="2"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 8.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Research</span>
-        </a>
+        <div class="nav-dropdown">
+          <a class="nav-link " href="../research/" aria-label="Research" aria-haspopup="true">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5" stroke="currentColor" stroke-width="2"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 8.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Research</span>
+          </a>
+          <div class="nav-dropdown-menu" aria-label="Research sections">
+            <a href="../research/#current-work">Current Work</a>
+            <a href="../research/#skills-expertise">Skills and Expertise</a>
+            <a href="../research/#selected-publications">Selected Publications</a>
+            <a href="../research/#selected-conference-presentations">Selected Conference Presentations</a>
+          </div>
+        </div>
         <a class="nav-link " href="../education" aria-label="Teaching & Consulting">
           <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8.5L12 4l8 4.5-8 4.5-8-4.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.2V15c0 1.8 2.7 4 6 4s6-2.2 6-4v-4.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Teaching & Consulting</span>
         </a>
@@ -56,7 +64,7 @@
 </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="current-work">
       <div class="container">
         <div class="section-head">
           <h2 class="section-title">Current Work</h2>
@@ -91,43 +99,9 @@
     </section>
 
 
-    <section class="section skills-section">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">Skills and Expertise</h2>
-        </div>
-        <div class="skills-row" aria-label="Skills and expertise">
-          <div class="skill-group">
-            <h3>Statistical Tools</h3>
-            <div class="skill-pills">
-              <span class="skill-pill">RStudio</span>
-              <span class="skill-pill">Python</span>
-              <span class="skill-pill">SPSS</span>
-              <span class="skill-pill">PsychoPy</span>
-              <span class="skill-pill">JASP</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h3>Survey Software</h3>
-            <div class="skill-pills">
-              <span class="skill-pill">Qualtrics</span>
-              <span class="skill-pill">Pavlovia</span>
-              <span class="skill-pill">Amazon's Mechanical Turk</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <h3>Others</h3>
-            <div class="skill-pills">
-              <span class="skill-pill">SQL</span>
-              <span class="skill-pill">Open Science Framework</span>
-              <span class="skill-pill">LaTeX</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
-    <section class="section">
+    <section class="section" id="selected-publications">
       <div class="container">
         <div class="section-head">
           <h2 class="section-title">Selected Publications</h2>
@@ -173,7 +147,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="selected-conference-presentations">
       <div class="container">
         <div class="section-head">
           <h2 class="section-title">Selected Conference Presentations</h2>
@@ -229,14 +203,48 @@
         </div>
       </div>
     </section>
-
+<section class="section skills-section" id="skills-expertise">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Skills and Expertise</h2>
+        </div>
+        <div class="skills-row" aria-label="Skills and expertise">
+          <div class="skill-group">
+            <h3>Statistics & Data Viz</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">RStudio</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">SPSS</span>
+              <span class="skill-pill">PsychoPy</span>
+              <span class="skill-pill">Quarto</span>
+              <span class="skill-pill">Tableau</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Survey Software</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Qualtrics</span>
+              <span class="skill-pill">Pavlovia</span>
+              <span class="skill-pill">Prolific</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Others</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">LaTeX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        <p>&copy; 2026 Prachi Solanki, PhD.</p>
+        <p>&copy; 2026 Prachi Solanki</p>
         <p class="small">Research Analyst & Statistician</p>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">

@@ -195,6 +195,55 @@ img {
   color: #fff;
 }
 
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 260px;
+  padding: 0.45rem;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-0.35rem);
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 0.7rem 0.8rem;
+  border-radius: 6px;
+  color: var(--charcoal);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible {
+  background: var(--soft-blue);
+  color: var(--primary-blue);
+  outline: none;
+}
+
+section[id] {
+  scroll-margin-top: 110px;
+}
+
 .nav-label {
   font-size: 0.95rem;
   white-space: nowrap;
@@ -205,10 +254,7 @@ img {
 }
 
 .hero-card {
-  
-  border-radius: 28px;
-  
-  padding: clamp(1.5rem, 3vw, 3rem);
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -375,8 +421,8 @@ h1 {
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .profile-card, .content-card, .info-card {
@@ -539,7 +585,7 @@ h1 {
   right: clamp(1.2rem, 5vw, 4rem);
   bottom: clamp(1.2rem, 5vw, 4rem);
   z-index: 2;
-  max-width: 760px;
+  
   color: #fff;
 }
 
@@ -554,7 +600,7 @@ h1 {
 
 .poster-caption h3 {
   margin: 0;
-  font-size: clamp(1.7rem, 4vw, 3rem);
+  font-size: clamp(1.7rem, 2.5vw, 2rem);
   line-height: 1.12;
 }
 
@@ -776,6 +822,7 @@ h1 {
   .compact-social-grid { justify-content: center; justify-self: center; }
   .site-nav .inner { min-height: auto; padding: 0.75rem 0; flex-direction: column; align-items: flex-start; }
   .nav-links { justify-content: flex-start; }
+  section[id] { scroll-margin-top: 150px; }
 }
 
 @media (max-width: 640px) {
