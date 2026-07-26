@@ -5,24 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prachi Solanki, PhD | Teaching, Service, Mentorship</title>
   <link rel="stylesheet" href="../assets/styles.css" />
-   <script>
-    setInterval(() => {
-      window.location.reload();
-    }, 500); // 500 milliseconds = 0.5 seconds
-  </script>
 </head>
 <body>
+  <div id="particles-js" aria-hidden="true"></div>
    <nav class="site-nav">
     <div class="inner">
       <a class="brand" href="../" aria-label="Home">
         <span class="brand-mark"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 11.5L12 4l9 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10.75V20h5.5v-5.5h3V20H19V10.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <div class="nav-links">
-        <a class="nav-link " href="../research" aria-label="Research">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5" stroke="currentColor" stroke-width="2"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 8.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Research</span>
-        </a>
-        <a class="nav-link " href="../education" aria-label="Education">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8.5L12 4l8 4.5-8 4.5-8-4.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.2V15c0 1.8 2.7 4 6 4s6-2.2 6-4v-4.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Education</span>
+        <div class="nav-dropdown">
+          <a class="nav-link " href="../research/" aria-label="Research" aria-haspopup="true">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5" stroke="currentColor" stroke-width="2"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 8.5h3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Research</span>
+          </a>
+          <div class="nav-dropdown-menu" aria-label="Research sections">
+            <a href="../research/#current-work">Current Work</a>
+            <a href="../research/#skills-expertise">Skills and Expertise</a>
+            <a href="../research/#selected-publications">Selected Publications</a>
+            <a href="../research/#selected-conference-presentations">Selected Conference Presentations</a>
+          </div>
+        </div>
+        <a class="nav-link " href="../education" aria-label="Teaching & Consulting">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8.5L12 4l8 4.5-8 4.5-8-4.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 10.2V15c0 1.8 2.7 4 6 4s6-2.2 6-4v-4.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="nav-label">Teaching & Consulting</span>
         </a>
          <a class="nav-link " href="../contact" aria-label="Contact">
             <svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -44,62 +48,116 @@
   <main>
     <section class="page-hero">
       <div class="container hero-card">
-        <div class="hero-grid">
-          <div class="avatar" aria-label="Teaching page">TSM</div>
           <div>
-            <div class="kicker">Teaching / Service / Mentorship</div>
-            <h1>A dedicated page for classes, service, and mentoring</h1>
-            <p class="lead">This page is structured so you can add teaching materials, committee service, workshops, student mentorship, and public-facing service in one place.</p>
-            <div class="button-row">
-              <a class="pill-button primary" href="../">Back to Home</a>
-              <a class="pill-button" href="../research/">Research</a>
-              <a class="pill-button" href="../contact/">Contact</a>
-            </div>
+            
+             <h1>Teaching and Consulting</h1>
+             
           </div>
-        </div>
-      </div>
+</div>
     </section>
 
     <section class="section">
       <div class="container grid-3">
         <div class="content-card">
-          <h3>Teaching</h3>
-          <p>Add courses, guest lectures, workshops, or training sessions here.</p>
+          <h2>Teaching</h2>
+          <h3>Courses</h3>
+              <ul>
+                <li> PSY 598: Advanced Cognitive Science (Teaching Assistant, in-person)
+                <li> PSY 500: Research Methodology (Teaching Assistant, in-person) 
+                <li> PSY 424: Child and Family Psychopathology (Teaching Assistant, hybrid)
+                <li>PSY 395: Research Methods (Teaching Assistant, hybrid)
+                <li>PSY 360: Cognitive Science (Teaching Assistant, in-person)
+                <li>PSY 350: Social Psychology (Teaching Assistant, hybrid)
+                <li>PSY 339: Psychology of Women (Teaching Assistant, online synchronous)
+                <li>PSY 324: Memory and Cognition (Teaching Assistant, online synchronous)
+                <li>PSY 230: Developmental Psychology: Lifespan (Lecturer, online asynchronous)
+                <li>PSY 236: Personality (Teaching Assistant, in-person)
+                <li>PSY 209: Brain and Behaviour (Lecturer 2 semesters, online asynchronous)
+                <li>PSY 101: Introduction to Psychology (Teaching Assistant, in-person + online asynchronous)</li>
+              </ul>
+           <h3>Invited Talks</h3>
+              <ul>
+                <li> Solanki, P. (March, 2026). Conversation with a Qualitative Researcher & Survey Expert at CEP 930 (Educational Inquiry course), Department of Counseling, Educational Psychology, and Special Education, Michigan State University, East Lansing.
+                <li> Solanki, P. (October, 2024). Enhancing research integrity via open science practices on OSF at Applied Biostatistical Sciences Network, University of Michigan, Ann Arbor.
+                <li> Solanki, P. & Cesario, J. (October, 2023). The Nature of Racial Superhumanization Bias presented at PSY 319 course (Principles of Research Design) at the University of Michigan, Flint. 
+                <li> Solanki, P. & Cesario, J. (January, 2021). Judgements of Social Groups presented to Katrin Schulz & Robert van Rooij’s research group at the Institute for Logic, Language and Computation, University of Amsterdam.
+                </li>
+              </ul>
         </div>
         <div class="content-card">
-          <h3>Service</h3>
-          <p>Add committee work, peer review, community engagement, and leadership roles here.</p>
-        </div>
-        <div class="content-card">
-          <h3>Mentorship</h3>
-          <p>Add student advising, mentoring philosophy, and supervision experience here.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container grid-2">
-        <div class="info-card">
-          <h3>Suggested structure</h3>
-          <ul class="bullet-list">
-            <li>Teaching experience</li>
-            <li>Mentoring philosophy</li>
-            <li>Service and outreach</li>
-            <li>Professional development / workshops</li>
+          <h2>Statistical Consulting</h2>
+      <h3>School of Nursing, Oakland University</h3>
+          <ul>
+            <li> I analyzed 3,000+ healthcare records to evaluate an emissions-reduction intervention achieving 45–75% reductions in fresh gas flow during anesthesia. This project helped Southwest Michigan hospitals meet national carbon compliance standards and reduce their overall carbon footprint. 
+            <li> I applied statistical expertise to Social Determinants of Health data to identify medical treatment gaps and social barriers facing vulnerable patient and veteran populations. This project informed equity-driven healthcare strategies across low-income Michigan communities. </li> 
           </ul>
+      <h3>Center for Statistical Training & Consulting (CSTAT), Michigan State University</h3>
+      <ul>
+        <li> I developed a custom R package, built an automated reporting system that cut reporting time by 80%, and delivered 24 technical reports on behavioural intervention trends for Michigan Department of Health and Human Services. 
+        <li> I also applied advanced statistical analyses to A/B test the effectiveness of reading interventions, providing data-driven recommendations that reached 50,000+ practitioners and researchers across Michigan's K-12 literacy programs.</li>
+      </ul>
+
+          <p>Packages 
+              <ul>
+                <li> Pierce, S. J., Solanki, P., Ma, W., DeCicco, B., Yao, S. X., & Carlson, J. S. (2024). LOF.REPORTS: Level of functioning reports research compendium. (Version 3.19.0) [Reproducible research materials and computer program, R package, private repository]. GitHub. https://github.com/JohnSCarlson/LOF.REPORTS
+
+                <li> Pierce, S. J., Solanki, P., & Carlson, J. S. (2024). WEP.REPORTS: Wraparound evaluation project reports research compendium. (Version 1.2.0) [Reproducible research materials and computer program, R package, private repository]. GitHub. https://github.com/sjpierce/WEP.REPORTS.</li>
+              </ul>
+           <p> Technical Reports</p>
+              <ul>
+               <li> Carlson, J. S., Pierce, S. J., & Solanki, P. (2024, August 7). 2011-2023 PECFAS aggregate report of trends in outcomes from initial to exit [PECFAS Reports 1-12 prepared for Michigan Department of Health and Human Services]. Michigan State University.
+                <li> Carlson, J. S., Pierce, S. J., Solanki, P., & DeCicco, B. (2023, September 20). FY 2022 CAFAS aggregate report of initial assessments [CAFAS Report 1-12 prepared for Michigan Department of Health and Human Services]. Michigan State University.</li>
+              </ul>
+          <h3>Statistics & Methods (SAM) Lab, Arizona State University</h3>
+          <p>I provided personalized instruction to 50+ graduate students, guiding them to implement various quantitative analysis, research methodology, and hypothesis testing in both, in-person & virtual tutoring settings.</p>
         </div>
-        <div class="callout">
-          <h3>Ready for your content</h3>
-          <p class="small">This section is intentionally clean so you can paste in the exact teaching and service items you want to show without changing the page layout.</p>
+        <div class="content-card">
+          <h2>Mentorship</h2>
+          <p>Through the <a href= "https://www.istcoalition.org/education/mentor-matching-engine/"> Illinois Science & Technology Coalition (ISTC)</a>, I mentor high school students taking their first steps in research — helping them build skills and, hopefully, a lasting curiosity for science.
+        </div>
+        <div class="content-card">
+          <h2>Peer Review</h2>
+          <p> I serve as an ad hoc reviewer for Springer Nature, IEEE Transactions on Human-Machine Systems, The Journal of Social Psychology, and other peer-reviewed journals. I also serve as a reviewer for Cognitive Science Society and Society for Personality and Social Psychology's annual conferences.</p>
+        </div>
+      </div>
+      
+    </section>
+      <section class="section" id="student-feedback">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Student Feedback</h2>
+        </div>
+        <div class="tile-container" aria-label="Selected publications">
+          <a class="tile"  target="_blank" rel="noopener noreferrer">
+            <div>
+              <p class="feedback">Prachi was very detail oriented and approachable. She was very passionate about her findings and presenting to the class, and I thoroughly enjoyed her presentation.</p>
+            </div>
+          </a>
+           <a class="tile"  target="_blank" rel="noopener noreferrer">
+            <div>
+              <p class="feedback">Throughout the presentation, there was not an area that needed improvement because it was well-planned and organized. It was clear, and very easy to understand.</p>
+            </div>
+          </a>
+           <a class="tile"  target="_blank" rel="noopener noreferrer">
+            <div>
+              <p class="feedback">I really admired how relatable and upfront Prachi was, it was refreshing. I thought the whole concept of her research was interesting and had me pondering different variables within the study.</p>
+            </div>
+          </a>
+           <a class="tile"  target="_blank" rel="noopener noreferrer">
+            <div>
+              <p class="feedback">I just want to say thank Prachi for all the work and effort she put into my research project this year. I want to thank her so much for all her help in this [research] journey. It was so great working with her, I am forever grateful!</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
+   
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        <p>&copy; 2026 Prachi Solanki, PhD.</p>
+        <p>&copy; 2026 Prachi Solanki</p>
         <p class="small">Research Analyst & Statistician</p>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
@@ -111,7 +169,7 @@
       </nav>
       <div class="compact-social-grid" aria-label="Social links">
         <a class="compact-social-link" href="https://github.com/heyprachi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.65 5.58.65 11.85c0 5.02 3.25 9.27 7.76 10.76.57.11.78-.24.78-.53 0-.26-.01-1.12-.02-2.04-3.16.69-3.83-1.34-3.83-1.34-.52-1.31-1.27-1.66-1.27-1.66-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.96.1-.74.4-1.25.73-1.54-2.52-.29-5.16-1.27-5.16-5.65 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.18.91-.25 1.88-.38 2.85-.38.97 0 1.94.13 2.85.38 2.18-1.49 3.14-1.18 3.14-1.18.62 1.58.23 2.75.11 3.04.73.8 1.18 1.83 1.18 3.08 0 4.39-2.65 5.36-5.18 5.64.41.35.78 1.04.78 2.1 0 1.52-.01 2.75-.01 3.13 0 .3.2.65.79.53A11.36 11.36 0 0 0 23.35 11.85C23.35 5.58 18.27.5 12 .5z"/></svg>
+           <img class="social-icon" src="../assets/github.svg" alt="" />
         </a>
         <a class="compact-social-link" href="https://osf.io/cuyjb" target="_blank" rel="noopener noreferrer" aria-label="OSF">
           <img class="social-icon" src="../assets/osf_logo.png" alt="" />
@@ -125,5 +183,106 @@
       </div>
     </div>
   </footer>
+  <script>
+    const autoAdvanceDelay = 7000;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const publicationTiles = document.querySelector('.tile-container');
+    const posterCarousel = document.querySelector('[data-poster-carousel]');
+
+    if (publicationTiles && !prefersReducedMotion) {
+      const tiles = Array.from(publicationTiles.querySelectorAll('.tile'));
+      let activeTile = 0;
+      let tileTimer;
+
+      if (tiles.length > 1) {
+        const scrollToTile = (index) => {
+          activeTile = (index + tiles.length) % tiles.length;
+          publicationTiles.scrollTo({
+            left: tiles[activeTile].offsetLeft - publicationTiles.offsetLeft,
+            behavior: 'smooth'
+          });
+        };
+
+        const startTileTimer = () => {
+          stopTileTimer();
+          tileTimer = window.setInterval(() => scrollToTile(activeTile + 1), autoAdvanceDelay);
+        };
+
+        const stopTileTimer = () => {
+          window.clearInterval(tileTimer);
+        };
+
+        publicationTiles.addEventListener('mouseenter', stopTileTimer);
+        publicationTiles.addEventListener('mouseleave', startTileTimer);
+        publicationTiles.addEventListener('focusin', stopTileTimer);
+        publicationTiles.addEventListener('focusout', startTileTimer);
+        publicationTiles.addEventListener('scroll', () => {
+          const closestTile = tiles.reduce((closest, tile, index) => {
+            const tileLeft = tile.offsetLeft - publicationTiles.offsetLeft;
+            const distance = Math.abs(tileLeft - publicationTiles.scrollLeft);
+            return distance < closest.distance ? { index, distance } : closest;
+          }, { index: activeTile, distance: Infinity });
+
+          activeTile = closestTile.index;
+        });
+
+        startTileTimer();
+      }
+    }
+
+    if (posterCarousel) {
+      const slides = Array.from(posterCarousel.querySelectorAll('.poster-slide'));
+      const dots = Array.from(posterCarousel.querySelectorAll('[data-poster-dot]'));
+      const previousButton = posterCarousel.querySelector('[data-poster-prev]');
+      const nextButton = posterCarousel.querySelector('[data-poster-next]');
+      let activeSlide = 0;
+      let posterTimer;
+
+      const showSlide = (index) => {
+        activeSlide = (index + slides.length) % slides.length;
+
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle('active', slideIndex === activeSlide);
+        });
+
+        dots.forEach((dot, dotIndex) => {
+          const isActive = dotIndex === activeSlide;
+          dot.classList.toggle('active', isActive);
+          dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+        });
+      };
+
+      const startPosterTimer = () => {
+        if (prefersReducedMotion || slides.length < 2) return;
+        stopPosterTimer();
+        posterTimer = window.setInterval(() => showSlide(activeSlide + 1), autoAdvanceDelay);
+      };
+
+      const stopPosterTimer = () => {
+        window.clearInterval(posterTimer);
+      };
+
+      const showSlideAndRestart = (index) => {
+        showSlide(index);
+        startPosterTimer();
+      };
+
+      previousButton.addEventListener('click', () => showSlideAndRestart(activeSlide - 1));
+      nextButton.addEventListener('click', () => showSlideAndRestart(activeSlide + 1));
+
+      dots.forEach((dot) => {
+        dot.addEventListener('click', () => showSlideAndRestart(Number(dot.dataset.posterDot)));
+      });
+
+      posterCarousel.addEventListener('mouseenter', stopPosterTimer);
+      posterCarousel.addEventListener('mouseleave', startPosterTimer);
+      posterCarousel.addEventListener('focusin', stopPosterTimer);
+      posterCarousel.addEventListener('focusout', startPosterTimer);
+
+      startPosterTimer();
+    }
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script defer src="../assets/particles-background.js"></script>
 </body>
 </html>
