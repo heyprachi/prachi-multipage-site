@@ -18,9 +18,22 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; /* Try poppins later*/
   color: var(--dark-gray);
-  background: linear-gradient(180deg, #fff 0%, #FFFAFA 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.90) 0%, rgba(255, 250, 250, 0.90) 100%);
   line-height: 1.65;
   padding-top: 88px;
+}
+
+#particles-js {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+main,
+.footer {
+  position: relative;
+  z-index: 1;
 }
 
 a { color: inherit; }
@@ -36,6 +49,25 @@ img {
 .container {
   width: min(1180px, calc(100% - 2rem));
   margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-intro {
+  margin: 1rem 0 1.5rem;
+}
+
+.contact-form-prompt {
+  margin: 1rem 0 0;
+  color: var(--medium-gray);
+  font-weight: 600;
+}
+
+.contact-form iframe {
+  max-width: 100%;
 }
 
 .tile-container {
