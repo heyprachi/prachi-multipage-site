@@ -4,7 +4,7 @@ if (
 ) {
   particlesJS("particles-js", {
     particles: {
-      number: { value: 45, density: { enable: true, value_area: 900 } },
+      number: { value: 80, density: { enable: true, value_area: 500 } },
       color: { value: ["#9C4200", "#0E3386"] },
       shape: { type: "circle" },
       opacity: { value: 0.5, random: true },
