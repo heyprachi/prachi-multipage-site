@@ -70,6 +70,21 @@ img {
   max-width: 100%;
 }
 
+.expandable-content {
+  margin: 1rem 0;
+}
+
+.expandable-content summary {
+  color: var(--burnt-sienna);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.expandable-content summary:hover,
+.expandable-content summary:focus-visible {
+  color: var(--primary-blue);
+}
+
 .tile-container {
   display: flex;
   align-items: stretch;
